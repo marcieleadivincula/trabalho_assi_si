@@ -67,7 +67,7 @@ object Form_resultados: TForm_resultados
       Width = 922
       Height = 238
       Align = alClient
-      DataSource = DataSource1
+      DataSource = dsConsulta
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -19
@@ -220,20 +220,18 @@ object Form_resultados: TForm_resultados
   object FuncionarioConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=funcionario')
-    Connected = True
     LoginPrompt = False
-    Left = 661
-    Top = 525
+    Left = 605
+    Top = 517
   end
   object CadfuncionarioTable: TFDQuery
-    Active = True
     Connection = FuncionarioConnection
     SQL.Strings = (
       'SELECT * FROM funcionario.cadfuncionario')
-    Left = 764
-    Top = 528
+    Left = 740
+    Top = 472
   end
-  object DataSource1: TDataSource
+  object dsConsulta: TDataSource
     DataSet = CadfuncionarioTable
     Left = 840
     Top = 528

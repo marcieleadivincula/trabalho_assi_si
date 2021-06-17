@@ -22,7 +22,7 @@ type
     DBGrid1: TDBGrid;
     FuncionarioConnection: TFDConnection;
     CadfuncionarioTable: TFDQuery;
-    DataSource1: TDataSource;
+    dsConsulta: TDataSource;
     Ed_periodo1: TEdit;
     Label1: TLabel;
     Label2: TLabel;
@@ -104,7 +104,7 @@ begin
 
     if (CadfuncionarioTable.RecordCount > 0) then
     begin
-      DBGrid1.DataSource := DataSource1;
+      DBGrid1.DataSource := dsConsulta;
       result := true;
     end
     else

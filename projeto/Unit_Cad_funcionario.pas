@@ -68,7 +68,7 @@ end;
 
 procedure TForm_cad_funcion.btSairClick(Sender: TObject);
 begin
-close;
+      close;
 end;
 
 procedure TForm_cad_funcion.btSalvarClick(Sender: TObject);

@@ -202,7 +202,7 @@ object Form_cad_funcion: TForm_cad_funcion
     end
     object ComboBox_situacao: TComboBox
       Left = 200
-      Top = 110
+      Top = 101
       Width = 273
       Height = 28
       Style = csDropDownList

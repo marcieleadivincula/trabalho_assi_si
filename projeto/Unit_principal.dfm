@@ -21,16 +21,16 @@ object Form_principalmenu: TForm_principalmenu
     Left = 264
     Top = 80
     object Cadastrohoras1: TMenuItem
-      Caption = 'Cadastro funcionario'
+      Caption = 'Cadastro'
       object Lancamentohoras1: TMenuItem
-        Caption = 'cadastro'
+        Caption = 'Funcion'#225'rio'
         OnClick = Lancamentohoras1Click
       end
     end
     object Consultatotaldemodeobra1: TMenuItem
-      Caption = 'Dados funcionarios'
+      Caption = 'Consulta'
       object Consulta1: TMenuItem
-        Caption = 'Consulta'
+        Caption = 'Funcion'#225'rio'
         OnClick = Consulta1Click
       end
     end

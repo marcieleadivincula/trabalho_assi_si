@@ -33,18 +33,19 @@ implementation
 procedure TForm_principalmenu.Consulta1Click(Sender: TObject);
 begin
     if (Form_resultados = nil) then
-      Form_resultados := TForm_resultados.Create(self);
-      Form_resultados.ShowModal;
-      FreeAndNil(Form_resultados);
+        Form_resultados := TForm_resultados.Create(self);
 
+    Form_resultados.ShowModal;
+    FreeAndNil(Form_resultados);
 end;
 
 procedure TForm_principalmenu.Lancamentohoras1Click(Sender: TObject);
 begin
     if (Form_cad_funcion = nil) then
-      Form_cad_funcion := TForm_cad_funcion.Create(self);
-      Form_cad_funcion.ShowModal;
-      FreeAndNil(Form_cad_funcion);
+        Form_cad_funcion := TForm_cad_funcion.Create(self);
+
+    Form_cad_funcion.ShowModal;
+    FreeAndNil(Form_cad_funcion);
 end;
 
 end.

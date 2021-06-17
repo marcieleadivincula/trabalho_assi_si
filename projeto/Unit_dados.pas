@@ -11,11 +11,14 @@ uses
   FireDAC.Comp.DataSet;
 
 type
-  TDataModule1 = class(TDataModule)
+  Tdm_dados = class(TDataModule)
     fdConexao: TFDConnection;
     qSQL: TFDQuery;
     qSELECT: TFDCommand;
     FDConsulta: TFDQuery;
+    fdTrFuncionario: TFDTransaction;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,12 +26,22 @@ type
   end;
 
 var
-  dm: TDataModule1;
+  dm: Tdm_dados;
 
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure Tdm_dados.DataModuleCreate(Sender: TObject);
+begin
+     fdConexao.Connected  := true;
+end;
+
+procedure Tdm_dados.DataModuleDestroy(Sender: TObject);
+begin
+     fdConexao.Connected  := false;
+end;
 
 end.
